@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Calculadora IMC (Índice de masa corporal)</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="question-card">
+        <h2>Calculadora IMC (Índice de masa corporal)</h2>
+        <div>
+          <label for="questionWeight"
+            >¿Cuál es tu peso en kilogramos? (Ejemplo: 65)"</label
+          >
+          <input type="text" id="questionWeight" />
+        </div>
+        <div>
+          <label for="questionHeight">
+            ¿Cuál es tu altura en metros? (Ejemplo: 1.65)"
+          </label>
+          <input type="text" id="questionHeight" />
+        </div>
+
+        <button class="modal-btn">Calcular</button>
+      </div>
+    </div>
+
+    <div class="modal-bg">
+      <div class="modal">
+        <div class="modal-close">X</div>
+        <h2 id="youColor">Tu tienes</h2>
+        <img id="image" src="img/bmi2.svg" alt="" />
+        <h2 id="weight">?</h2>
+
+        <div id="resultado">
+          Probando
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="index.js"></script>
+</html>
